@@ -1,0 +1,205 @@
+body, html {
+    background-image: url('assets/Background image.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.login__container {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100vh;
+}
+
+/** form **/
+.login__form-container {
+    width: 30%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login__form-header {
+    text-align: center;
+    background: white;
+    border-bottom: 3px solid #EA731F;
+    border-radius: 5px 5px 0 0;
+    padding: 10px;
+}
+
+.login__form-main {
+    background: white;
+    padding: 20px 30px;
+}
+
+.login__form-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.login__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login__user-login-header {
+    text-align: center;
+    font-family: Neue Haas Grotesk Display;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.login__input {
+    margin-bottom: 15px;
+    height: 43px;
+    border-radius: 1px;
+    border: 1px solid #D3D3D3;
+    max-width: 100%;
+    padding: 0 10px;
+}
+
+.login__eye-image-right {
+    background: url("assets/eye final.svg") no-repeat right;
+    background-size: 23px;
+}
+
+.login__checkbox {
+    margin-bottom: 30px;
+}
+
+.login__reset-password-link {
+    margin-bottom: 60px;
+    font-family: Neue Haas Grotesk Display;
+    font-size: 16px;
+    font-weight: 450;
+    text-align: center;
+    text-decoration: none;
+    color: #486082;
+}
+
+.login__form-button {
+    background: #EA731F;
+    color: white;
+    width: 127px;
+    height: 38px;
+    border-radius: 2px;
+    border: none;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.login__form-footer {
+    background: #5E6B75;
+    width: 100%;
+    height: 30px;
+    border-radius: 0px 0px 5px 5px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.login__form-footer-content {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: Neue Haas Grotesk Display;
+    font-weight: 450;
+}
+
+.login__lock-image {
+    margin-right: 10px;
+}
+
+/** content **/
+.login__content-container {
+    width: 30%;
+    padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login__content-header {
+    color: white;
+    font-size: 2rem;
+}
+
+.login__content-sub-header {
+    color: white;
+    font-size: 1rem;
+}
+
+/** images **/
+.login__images-container {
+    width: 40%;
+}
+
+.login__logo-circle-image {
+}
+
+.login__desktop-phone-image {
+    position: relative;
+    transform: translate(-225px, -235px);
+    width: 860px;
+}
+
+.login__chat-image {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 75px;
+    height: 75px;
+    margin-right: 25px;
+}
+
+@media (max-width: 1280px) {
+    .login__content-container {
+        display: none;
+    }
+
+    .login__form-container {
+        width: 40%;
+    }
+}
+
+@media (max-width: 767px) {
+    .login__container {
+        display: block;
+        max-height: 100vh;
+    }
+
+    .login__images-container {
+        display: none;
+    }
+
+    .login__form-container {
+        width: 100vw;
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+        display: block;
+    }
+
+    .login__form-main {
+        height: 100%;
+    }
+
+    .login__input {
+        height: 60px;
+    }
+
+    .login__form-footer {
+        position: fixed;
+        bottom: 0;
+    }
+
+    .login__form-button {
+        height: 50px;
+        width: 150px;
+    }
+}
