@@ -1,4 +1,4 @@
-body, html {
+body {
     background-image: url('assets/Background image.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -6,13 +6,11 @@ body, html {
     background-attachment: fixed;
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 
 .login__container {
     display: flex;
     justify-content: space-evenly;
-    height: 100vh;
 }
 
 /** form **/
@@ -126,12 +124,13 @@ body, html {
 
 .login__content-header {
     color: white;
-    font-size: 2rem;
+    font-size: 3vw;
+    margin: 0;
 }
 
 .login__content-sub-header {
     color: white;
-    font-size: 1rem;
+    font-size: 1vw;
 }
 
 /** images **/
@@ -140,26 +139,34 @@ body, html {
 }
 
 .login__logo-circle-image {
+    transform: translateX(-40px);
+    width: 94%;
 }
 
 .login__desktop-phone-image {
-    position: relative;
-    transform: translate(-225px, -235px);
-    width: 860px;
+    transform: translate(20px, -90px);
+    height: 55%;
 }
 
 .login__chat-image {
     position: fixed;
-    bottom: 0;
+    bottom: 20px;
     right: 0;
     width: 75px;
     height: 75px;
     margin-right: 25px;
 }
 
-@media (max-width: 1280px) {
-    .login__content-container {
-        display: none;
+@media (min-width: 2500px) {
+    .login__desktop-phone-image {
+        transform: translate(55px, -90px);
+        height: 60%;
+    }
+}
+
+@media (max-width: 1439px) {
+    .login__desktop-phone-image {
+        transform: translate(-25px, -25px);
     }
 
     .login__form-container {
@@ -167,7 +174,7 @@ body, html {
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1239px) {
     .login__container {
         display: block;
         max-height: 100vh;
